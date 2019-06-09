@@ -1,0 +1,66 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fonts.com
+*/
+
+@font-face {
+    font-family: "Honey Dew";
+    src: url("../Fonts/HoneyDew.eot") format("eot"), url("../Fonts/HoneyDew.woff") format("woff"), url("../Fonts/HoneyDew.woff2") format("woff2"), url("../Fonts/HoneyDew.ttf") format("ttf");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.brand-logo {
+    font-family: "Honey Dew";
+    font-size: 5em;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand-logo {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.idea {
+    text-align: center;
+}
+
+#login {
+    margin-top: 5px;
+}
+
+#sign-up {
+    top: 15rem;
+    left: 24.5rem;
+    width: 50%;
+}
+
+.dropdown-trigger {
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+#card {
+    margin: 75px 0px;
+    background-color: rgba(237, 243, 237, 0.95);
+}
+
+footer.page-footer {
+    background-color: rgb(157, 226, 156);
+}
+
+.dropdown-content {
+    position: relative;
+    right: 0px !important;
+    top: -5px !important;
+    background-color: rgb(237, 243, 237);
+}
+
+.main-card {
+    position: absolute
+}
