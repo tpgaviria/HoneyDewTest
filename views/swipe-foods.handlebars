@@ -1,0 +1,13 @@
+<h1>Foods</h1>
+
+<h2>All food ideas:</h2>
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    {{#each foods_data}}
+    <div class="swiper-slide" value={{this.id}}>
+      <h1 class="idea">{{meal_name}}</h1>
+    </div>
+    {{/each}}
+  </div>
+</div>

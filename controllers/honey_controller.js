@@ -11,10 +11,17 @@ router.get('/', function (req, res) {
     res.render('index');
 });
 
+// dashboard / account page
 router.get('/dashboard', function (req, res) {
     res.render('dashboard');
 });
 
+// swiping page
+router.get('/swipe/foods', function (req, res) {
+    res.render('swipe-foods', { foods_data: data });
+});
+
+// test page
 router.get('/test', function (req, res) {
     foods.all(function (data) {
         res.render('test', { foods_data: data });

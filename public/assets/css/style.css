@@ -17,6 +17,19 @@ body {
     font-size: 5em;
 }
 
+.header {
+    margin-top: 5px;
+    font-family: "Honey Dew";
+    font-weight: 500;
+}
+
+.info {
+    text-align: justify;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 a {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,37 +43,20 @@ a {
     text-align: center;
 }
 
-#login {
-    margin-top: 5px;
+.btn-large {
+    border-radius: 15px;
+    margin: 5px;
 }
 
-#sign-up {
-    top: 15rem;
-    left: 24.5rem;
-    width: 50%;
+.thumbnail {
+    border: 2px solid #dbdbdb;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
 }
 
-.dropdown-trigger {
-    margin-right: 30px;
-    margin-top: 5px;
-}
-
-#card {
-    margin: 75px 0px;
-    background-color: rgba(237, 243, 237, 0.95);
-}
-
-footer.page-footer {
-    background-color: rgb(157, 226, 156);
-}
-
-.dropdown-content {
-    position: relative;
-    right: 0px !important;
-    top: -5px !important;
-    background-color: rgb(237, 243, 237);
-}
-
-.main-card {
-    position: absolute
+.thumbnail-img {
+    max-width: 190px;
+    max-height: 190px;
+    padding: 5px;
 }

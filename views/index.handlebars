@@ -1,101 +1,134 @@
 <main>
 
- <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-            <br><br>
-            <h1 class="header center orange-text">Starter Template</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-            <div class="row center">
-                   <!-- Modal Trigger -->
-  <button data-target="sign-up" class="btn modal-trigger">Sign Up</button>
-  <!-- Modal Structure -->
-  <div id="sign-up" class="modal bottom-sheet">
-    <div class="modal-content">
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-         <div class="input-field col s6">
-          <input couple-name placeholder="The HoneyDew Couple" id="couple-name" type="text" class="validate">
-          <label for="disabled">Couple Name</label>
-        </div> 
-         <div class="input-field col s6">
-          <input placeholder="HoneyDew" id="secret-word" type="text" class="validate">
-          <label for="first_name">Secret Word</label>
-        </div>
-        <div class="input-field col s6">
-          <input placeholder="Blake Lively" id="user1" type="text" class="validate">
-          <label for="first_name">Your Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input placeholder="Ryan Reynolds"id="user2" type="text" class="validate">
-          <label for="last_name">Your Better Half</label>
-        </div>
-      <button type="submit" form="formId" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</button>
-
-</div>
-    </form>
-  </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
-    </div>
-  </div>
-  </div>
-</div>
-            </div>
-            <br><br>
-
-        </div>
-    </div>
-
-
+  <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-        <div class="section">
+      <br><br>
+      <h1 class="header center orange-text">HoneyDew</h1>
+      <div class="row center"><img class="responsive-img" src="assets/images/logo.png"></div>
+      <div class="row center">
+        <h5 class="header col s12 light">MAKING THOSE THOUGH EVERYDAY DECISIONS WITH YOUR PARTNER EASIER!</h5>
+      </div>
+      <div class="row center">
+        <!-- Modal Trigger -->
+        <button data-target="sign-up" class="btn-large orange lighten-4 brown-text text-darken-1 modal-trigger">Sign
+          Up</button>
 
-            <!--   Icon Section   -->
+        <button data-target="login" class="btn-large orange lighten-4 brown-text text-darken-1 modal-trigger">Log
+          In</button>
+
+
+        <!-- Modal Structure -->
+        <div id="sign-up" class="modal modal-fixed-footer">
+          <div class="modal-content">
+
             <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input couple-name placeholder="The HoneyDew Couple" id="couple-name" type="text" class="validate">
+                    <label for="disabled">Couple Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="HoneyDew" id="secret-word" type="text" class="validate">
+                    <label for="first_name">Secret Word</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Blake Lively" id="user1" type="text" class="validate">
+                    <label for="first_name">Your Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Ryan Reynolds" id="user2" type="text" class="validate">
+                    <label for="last_name">Your Better Half</label>
+                  </div>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                            incorporate our custom components. Additionally, we refined animations and transitions to
-                            provide a smoother experience for developers.</p>
-                    </div>
+
                 </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
-
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create
-                            a framework that incorporates components and animations that provide more feedback to users.
-                            Additionally, a single underlying responsive system across all platforms allow for a more
-                            unified user experience.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
-
-                        <p class="light">We have provided detailed documentation as well as specific code examples to
-                            help new users get started. We are also always open to feedback and can answer any questions
-                            a user may have about Materialize.</p>
-                    </div>
-                </div>
+              </form>
             </div>
-
+          </div>
+          <div class="modal-footer">
+            <button type="submit" form="formId"
+              class="modal-action modal-close waves-effect waves-green btn-flat">Submit</button>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+          </div>
         </div>
-        <br><br>
-    </div>
 
-      
-          
+        <!-- Modal Structure -->
+        <div id="login" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m7">
+
+
+          <h5 class="brown-text text-lighten-2 info">Swipe through our ideas, or add your own! Double tap the ones you like. When it comes
+            time to decide what to do or eat, we'll show you a random idea that you both liked! No more hour-long
+            quarrels trying to decide what to eat for dinner!<br><br>
+            Create a shared account, and finally get an answer to "Honey, what do you you want to 'dew'?!"</h5>
+        </div>
+
+
+        <div class="col s12 m5">
+          <div class="row center">
+            <div class="col m1 hide-on-small-only"></div>
+            <div class="col s6 m5">
+              <div class="thumbnail">
+                <img src="assets/images/taco.png" class="thumbnail-img">
+              </div>
+            </div>
+            <div class="col s6 m5">
+              <div class="thumbnail">
+                <img src="assets/images/golf.jpg" class="thumbnail-img">
+              </div>
+            </div>
+            <div class="col m1 hide-on-small-only"></div>
+          </div>
+          <div class="row center">
+            <div class="col m1 hide-on-small-only"></div>
+            <div class="col s6 m5">
+              <div class="thumbnail">
+                <img src="assets/images/picnic.jpg" class="thumbnail-img">
+              </div>
+            </div>
+            <div class="col s6 m5">
+              <div class="thumbnail">
+                <img src="assets/images/pizza.png" class="thumbnail-img">
+              </div>
+            </div>
+            <div class="col m1 hide-on-small-only"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+
+
 
 </main>
