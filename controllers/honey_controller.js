@@ -18,7 +18,9 @@ router.get('/dashboard', function (req, res) {
 
 // swiping page
 router.get('/swipe/foods', function (req, res) {
-    res.render('swipe-foods', { foods_data: data });
+    foods.all(function (data) {
+        res.render('swipe-foods', { foods_data: data });
+    })
 });
 
 // test page
@@ -36,8 +38,8 @@ router.get('/both', function (req, res) {
 
 // for initial swiping and liking
 router.get('/foods/like', function (req, res) {
-    foods.all(function(data) {
-        res.render('swipe', {foods_data: data})
+    foods.all(function (data) {
+        res.render('swipe', { foods_data: data })
     })
 });
 
@@ -63,8 +65,8 @@ router.put("/api/foods/undo/:id", function (req, res) {
 });
 
 router.get('/activities/like', function (req, res) {
-    activities.all(function(data) {
-        res.render('swipe', {activites_data: data})
+    activities.all(function (data) {
+        res.render('swipe', { activites_data: data })
     })
 });
 

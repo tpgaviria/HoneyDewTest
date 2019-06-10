@@ -18,23 +18,34 @@ $(document).ready(function () {
         method: "PUT",
         url: "/api/foods/undo/" + food_id
       }).then(function (data) {
-        console.log('unliked');
+        console.log(food_id + ' unliked');
       })
 
-      $(this).toggleClass('liked');
-    } else {
+      $(this).toggleClass('liked unliked');
+
+      $('.unliked').css({
+        "background-image": "",
+        "background-size": "100%"
+      });
+
+    } else if ($(this).hasClass('unliked')) {
+
       var food_id = $(this).attr('value');
-      console.log(food_id);
+
       $.ajax({
         method: "PUT",
         url: "/api/foods/liked/" + food_id
       }).then(function (data) {
-        console.log('liked');
+        console.log(food_id + ' liked');
       })
-      
-      $(this).toggleClass('liked');
+
+      $(this).toggleClass('liked unliked');
+
+      $('.liked').css({
+        "background-image": "url('../assets/images/heart.png')",
+        "background-size": "30%"
+      });
     }
   });
-
 
 });

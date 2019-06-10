@@ -8,8 +8,15 @@ This CSS resource incorporates links to font software which is the valuable copy
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+}
+
+main {
+    min-height: 100vh;
 }
 
 .brand-logo {
@@ -41,6 +48,11 @@ a {
 
 .idea {
     text-align: center;
+    margin-top: 30%;
+    color: #ffc400;
+    font-size: 5em;
+    -webkit-text-stroke: 1px #242424;
+    text-shadow: 0px 0px 14px rgb(133, 143, 0);
 }
 
 .btn-large {
