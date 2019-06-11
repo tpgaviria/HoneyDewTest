@@ -78,6 +78,20 @@ a {
 }
 
 .user-side-bar {
-    background: mintcream;
+    background: hsl(66, 71%, 95%);
     height: 100%;
+}
+
+.av-img {
+    height: 200px;
+    margin:20px auto;
+}
+
+.dashboard-cont {
+    width:100%;
+    margin-left: 0px;
+}
+
+.user-side-bar {
+    height: 90vh;
 }
