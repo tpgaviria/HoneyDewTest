@@ -12,11 +12,15 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
 }
 
 main {
+    background-color:#ffffff;
     min-height: 100vh;
+}
+
+.swipe-page {
+    background: #242424;
 }
 
 .brand-logo {
@@ -71,4 +75,9 @@ a {
     max-width: 190px;
     max-height: 190px;
     padding: 5px;
+}
+
+.user-side-bar {
+    background: mintcream;
+    height: 100%;
 }

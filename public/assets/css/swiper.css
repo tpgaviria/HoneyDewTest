@@ -15,7 +15,7 @@
   overflow: hidden;
   list-style: none;
   padding: 0;
-  height: 500px;
+  min-height: 85vh;
   width: 500px;
   background-image: linear-gradient(to bottom right, #afff97, #f8ff97, #ffe797);
   /* Fix of Webkit flickering */
@@ -34,7 +34,7 @@
 .swiper-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 85vh;
   z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;

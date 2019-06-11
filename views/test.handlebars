@@ -1,10 +1,14 @@
-<div class="swiper-container col s12 m6">
-      <p class="swipe-header center">Food Ideas:</p>
-  <div class="swiper-wrapper">
-    {{#each foods_data}}
-    <div class="swiper-slide unliked" value={{this.id}}>
-      <h4 class="idea">{{meal_name}}</h4>
+<main class="swipe-page col s12 m6">
+
+  <div class="swiper-container">
+    <p class="swipe-header center">Food Ideas:</p>
+    <div class="swiper-wrapper">
+      {{#each foods_data}}
+      <div class="swiper-slide unliked" value={{this.id}}>
+        <h4 class="idea">{{meal_name}}</h4>
+      </div>
+      {{/each}}
     </div>
-    {{/each}}
   </div>
-</div>
+
+</main>
