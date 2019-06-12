@@ -24,6 +24,11 @@ var foods = {
     orm.delete('foods', condition, function(res) {
         cb(res);
     });
+  },
+  both: function (cb) {
+    orm.both('foods', 'swipe', '>= 2', function(res) {
+      cb(res);
+    })
   }
 };
 

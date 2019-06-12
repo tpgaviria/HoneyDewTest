@@ -1,6 +1,7 @@
 // dependencies
 var express = require('express');
 var exphbs = require('express-handlebars');
+var bodyParser = require('body-parser');
 
 
 var app = express();
@@ -12,8 +13,8 @@ var PORT = process.env.PORT || 8080;
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // sets engine to handlebars, set default html layout to main.handlebars
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}));

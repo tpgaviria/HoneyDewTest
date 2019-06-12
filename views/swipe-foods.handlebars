@@ -4,7 +4,7 @@
     <p class="swipe-header center">Food Ideas:</p>
     <div class="swiper-wrapper">
       {{#each foods_data}}
-      <div class="swiper-slide unliked" value={{this.id}}>
+      <div class="swiper-slide unliked" value={{this.id}} like-count={{this.swipe}}>
         <h4 class="idea">{{meal_name}}</h4>
       </div>
       {{/each}}

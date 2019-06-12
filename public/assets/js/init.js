@@ -5,9 +5,12 @@ $(document).ready(function () {
 
   $('.sidenav').sidenav();
 
+  // create account
+
+
+  
+  // swiping / liking
   var mySwiper = new Swiper('.swiper-container');
-
-
   $('.swiper-slide').dblclick(function () {
 
     if ($(this).hasClass('liked')) {
@@ -42,7 +45,7 @@ $(document).ready(function () {
       $(this).toggleClass('liked unliked');
 
       $('.liked').css({
-        "background-image": "url('../assets/images/heart.png')",
+        "background-image": "url('/assets/images/heart.png')",
         "background-size": "30%"
       });
     }

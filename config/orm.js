@@ -58,6 +58,20 @@ var orm = {
             cb(result);
         });
     },
+    createUser: function (table, object, cb) {
+        var queryString = "INSERT INTO " + table;
+
+        queryString += " SET ? ";
+
+        console.log(queryString);
+
+        connection.query(queryString, object, function (err, result) {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
+    },
 
     // updates/changes a value for an item in the table
     update: function (table, objColVals, condition, cb) {
@@ -85,6 +99,20 @@ var orm = {
         queryString += condition;
 
         console.log(queryString);
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
+    },
+    both: function (table, condition, value, cb) {
+        var queryString = "SELECT * FROM " + table;
+
+        queryString += " WHERE ";
+        queryString += condition + " ";
+        queryString += value;
+
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
